@@ -33,11 +33,12 @@
                         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#publicatitons">Publication</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
-                    
+
                     <div id="themeToggle" class="theme-icon text-dark">
                         <i class="fas fa-moon text-dark" id="themeIcon"></i>
                     </div>
@@ -50,21 +51,62 @@
 
     <main>
         <!-- background for the the main page -->
-        <div id="vanta-bg" style="height: 100vh; width: 100%; position: absolute; top: 0; left: 0; z-index: -1;">
+        <div id="vanta-bg" style="width: 100%; position: absolute; top: 0; left: 0; z-index: -1;">
 
-            <section id="home" class="d-flex align-items-center justify-content-center text-center text-white" style="min-height: 100vh; position: relative; z-index: 1;">
+            <section id="home" class="d-flex align-items-center justify-content-center text-center text-white"
+                style="min-height: 100vh; position: relative; z-index: 1;">
                 <div class="container">
                     <h1 class="display-4 fw-bold mb-3" data-aos="zoom-in">Dev Pancholi</h1>
-                    <h2 class="fw-medium mb-4 text-secondary-emphasis" data-aos="zoom-in">Python Developer | Backend Developer | Full Stack Developer</h2>
-                    <p class="lead mb-2 text-secondary-emphasis fw-medium" data-aos="zoom-in">I'm passionate about building scalable Web Applications</p>
-                    <p class="lead mb-4 text-secondary-emphasis fw-medium" data-aos="zoom-in">With experience in both Frontend and Backend Development</p>
+                    <h2 class="fw-medium mb-4 text-secondary-emphasis" data-aos="zoom-in">Python Developer | Backend
+                        Developer | Full Stack Developer</h2>
+                    <p class="lead mb-2 text-secondary-emphasis fw-medium" data-aos="zoom-in">I'm passionate about
+                        building scalable Web Applications</p>
+                    <p class="lead mb-4 text-secondary-emphasis fw-medium" data-aos="zoom-in">With experience in both
+                        Frontend and Backend Development</p>
 
-                    <div class="d-flex flex-column flex-sm-row justify-content-center gap-3" data-aos="zoom-in" data-aos-delay="400">
-                        <a href="#projects" class="btn btn-primary btn-lg px-4">View My Work <i class="fa-solid fa-arrow-right-long"></i></a>
-                        <a href="/main/resume/Dev Resume.pdf" class="btn btn-outline-light btn-lg px-4" download>Download Resume <i class="fa-solid fa-download"></i></a>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center gap-3" data-aos="zoom-in"
+                        data-aos-delay="400">
+                        <a href="#projects" class="btn btn-primary btn-lg px-4">View My Work <i
+                                class="fa-solid fa-arrow-right-long"></i></a>
+                        <a href="/main/resume/Dev Resume.pdf" class="btn btn-outline-light btn-lg px-4"
+                            download>Download Resume <i class="fa-solid fa-download"></i></a>
                     </div>
                 </div>
             </section>
+
+            <section id="about" class="d-flex align-items-center justify-content-center text-white" style=" min-height: 100vh; position: relative; z-index: 1;">
+                <div class="container">
+                    <div class="heading">
+                        <h3 class="mb-3 text-center" data-aos="zoom-in">About Me</h3>
+                        <div class="underline mx-auto mt-2 mb-5"></div>
+                    </div>
+
+                    <div class="row align-items-center">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <div class="image-section position-relative d-flex justify-content-center" data-aos="zoom-in">
+                                <div class="card back-card"></div>
+                                <div class="main-image position-absolute">
+                                    <img src="/main/profile photo/photos.png" alt="Dev Pancholi" class="profile img-fluid">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" data-aos="fade-left">
+                            <h2 class="name mb-4">I'm Dev Pancholi</h2>
+                            <p class="lead mb-4 text-secondary-emphasis">
+                                I'm a passionate Full Stack Developer who loves to craft scalable web applications and deliver elegant user experiences.
+                                With experience in modern technologies like Python, Django, MySQL, and modern frameworks, I thrive on turning ideas into working solutions. I'm always excited to learn and build.
+                            </p>
+
+                            <h3 class="education">Education</h3>
+                            <p class="lead text-secondary-emphasis mb-4">BCA, Bachelor of Computer Application, 2025 (Grade : 9 CGPA)</p>
+
+                            <a href="#contact" class="btn btn-outline-light btn-lg px-4 text-center">Let's Connect <i class="fa-solid fa-link"></i> </a>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+
 
         </div>
     </main>
@@ -101,8 +143,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init({
-            duration: 1000, // animation duration
-            once: true      // only animate once
+            duration: 1000,
+            once: true
         });
     </script>
 </body>

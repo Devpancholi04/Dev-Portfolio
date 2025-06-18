@@ -48,3 +48,23 @@ body {
     font-size: 1rem;
   }
 }
+
+.underline{
+    width: 80px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+.image-section .back-card{
+    width: 500px;
+    height: 500px;
+    transform: rotate(4deg);
+}
+
+
+.image-section .main-image .profile{
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
