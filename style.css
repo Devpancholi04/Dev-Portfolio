@@ -1,0 +1,34 @@
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
+.theme-icon {
+    cursor: pointer;
+    font-size: 1.25rem;
+    transition: color 0.3s;
+}
+
+.theme-icon:hover {
+    color: #0d6efd;
+}
+
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+body {
+    scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.section {
+    height: 100vh;
+    padding-top: 60px;
+}
