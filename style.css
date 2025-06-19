@@ -74,8 +74,12 @@ body {
 }
 
 @media (max-width: 768px){
-    .name, .education, .lead, .connect-btn{
+    .name, .education, .connect-btn{
         text-align: center;
+    }
+
+    .lead{
+        text-align: justify;
     }
 
     #about a{
@@ -208,4 +212,14 @@ body {
         font-size: 1rem;
         padding: 0.5rem;
     }
+}
+
+
+.disabled-link {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#task .carousel-item img, .bms-card img{
+    height: 195px;
 }
