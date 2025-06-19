@@ -90,6 +90,7 @@ body {
 
 .section-full{
     min-height: 100vh;
+    max-height: 500vh;
     height: auto;
     padding: 4rem 0;
     position: relative;
@@ -222,4 +223,32 @@ body {
 
 #task .carousel-item img, .bms-card img{
     height: 195px;
+}
+
+
+.skill-card{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card .list li{
+    font-size: large;
+}
+
+
+.contact-border{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
 }
