@@ -57,29 +57,26 @@ body {
 }
 
 .image-section .back-card{
-    width: 500px;
-    height: 500px;
+    width: min(500px, 85vw);
+    height: min(500px, 85vw);
     transform: rotate(4deg);
 }
 
 
 .image-section .main-image .profile{
-    width: 500px;
-    height: 500px;
+    width: min(500px, 85vw);
+    height: min(500px, 85vw);
+    object-fit: cover;
     border-radius: 10px;
 }
 
 .lead{
-    text-align: justify;
+    text-align: left;
 }
 
 @media (max-width: 768px){
     .name, .education, .connect-btn{
         text-align: center;
-    }
-
-    .lead{
-        text-align: justify;
     }
 
     #about a{
@@ -88,13 +85,22 @@ body {
 
 }
 
+/* only the hero fills the viewport, other sections size to their content */
 .section-full{
-    min-height: 100vh;
-    max-height: 500vh;
     height: auto;
-    padding: 4rem 0;
+    padding: 5rem 0;
     position: relative;
     z-index: 1;
+    scroll-margin-top: 60px;
+}
+
+#home{
+    min-height: 100vh;
+}
+
+/* descriptions are left aligned (overrides the inline justify on cards) */
+.card-text{
+    text-align: left !important;
 }
 
 
@@ -156,18 +162,18 @@ body {
 }
 
 .timeline .timeline-content .skills .skill-items {
-  border: 1px solid black;  
+  border: 1px solid rgba(255, 255, 255, 0.25);
   padding: 8px 16px;
   border-radius: 25px;
   font-size: 0.9rem;
-  background-color: rgba(31, 35, 42, 0.1); 
+  background-color: rgba(255, 255, 255, 0.06);
   color: white;
   transition: all 0.3s ease;
   font-weight: bold;
 }
 
 .timeline .timeline-item .timeline-content .list li{
-    text-align: justify;
+    text-align: left;
 }
 
 
@@ -221,8 +227,27 @@ body {
     cursor: not-allowed;
 }
 
-#task .carousel-item img, .bms-card img{
-    height: 195px;
+/* uniform image height for project, freelance and publication cards */
+#projects .card-img-top,
+#freelance .card-img-top,
+#publication .card-img-top{
+    height: 220px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* lift and glow on hover */
+#projects .card,
+#freelance .card,
+#publication .card{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects .card:hover,
+#freelance .card:hover,
+#publication .card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4) !important;
 }
 
 
